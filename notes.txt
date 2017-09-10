@@ -1,0 +1,19 @@
+Webservice RESTful com Node.js, Restify e MySQL
+
+npm install restify eslint --save-dev
+npm i --save-dev restify-cors-middleware
+
+node_modules/.bin/eslint --init
+
+ add eslint extension "eslint.autoFixOnSave": true
+
+Para nao precisar ficar parando e servidor e iniciando novamente.
+npm i -g nodemon
+
+npm install mysql --save-dev
+
+
+// Interactively Manage Your Node.js Versions
+npm i -g n
+
+Quanto mais seu response for organizado mais coisas voce poderá informar.
