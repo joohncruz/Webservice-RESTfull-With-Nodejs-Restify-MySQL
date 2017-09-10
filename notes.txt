@@ -17,3 +17,12 @@ npm install mysql --save-dev
 npm i -g n
 
 Quanto mais seu response for organizado mais coisas voce poderá informar.
+
+
+Mysql commands:
+
+create database restful_ws;
+use restful_ws;
+create table categories (id INT(11) unsigned not null auto_increment, name varchar(255), primary key(id));
+insert into categories (name) values ('Teste 1');
+insert into categories (name) values ('Teste 2');
