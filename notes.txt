@@ -26,3 +26,14 @@ use restful_ws;
 create table categories (id INT(11) unsigned not null auto_increment, name varchar(255), primary key(id));
 insert into categories (name) values ('Teste 1');
 insert into categories (name) values ('Teste 2');
+
+
+
+.ENV JS
+npm i dotenv --save-dev
+https://github.com/motdotla/dotenv
+
+TESTS
+https://github.com/avajs/ava
+$ npm install --global ava
+$ ava --init
