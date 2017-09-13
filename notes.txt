@@ -37,3 +37,4 @@ TESTS
 https://github.com/avajs/ava
 $ npm install --global ava
 $ ava --init
+modo watch: npm teste -- --watch
