@@ -19,15 +19,26 @@ npm i -g n
 Quanto mais seu response for organizado mais coisas voce poderá informar.
 
 
+mysql -u <nome de usuário*> -p
+
 Mysql commands:
 
-create database restful_ws;
-use restful_ws;
+create database restful_ws_test;
+//create database restful_ws;
+use restful_ws_test;
+//use restful_ws;
 create table categories (id INT(11) unsigned not null auto_increment, name varchar(255), primary key(id));
 insert into categories (name) values ('Teste 1');
 insert into categories (name) values ('Teste 2');
 
+CREATE TABLE `users` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL DEFAULT '',
+  `password` varchar(40) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+insert into users (email, password) value ('joohncruzrocha@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
 
 .ENV JS
 npm i dotenv --save-dev
@@ -37,4 +48,7 @@ TESTS
 https://github.com/avajs/ava
 $ npm install --global ava
 $ ava --init
-modo watch: npm teste -- --watch
+modo watch: npm test -- --watch
+
+Criptografia de senha
+npm install -i --save-dev sha1
