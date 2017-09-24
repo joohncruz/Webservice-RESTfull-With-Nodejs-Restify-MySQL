@@ -52,3 +52,7 @@ modo watch: npm test -- --watch
 
 Criptografia de senha
 npm install -i --save-dev sha1
+
+JsonWebToken
+
+npm i --save-dev jsonwebtoken
